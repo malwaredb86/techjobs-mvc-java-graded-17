@@ -35,6 +35,9 @@
   </form>
 
   <hr />
+    <div >
+    <table th:replace="~{list-jobs :: results-table}" th:each="job : ${jobs}"></table>
+    </div>
 
   <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
